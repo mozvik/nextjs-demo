@@ -1,0 +1,33 @@
+.header{
+  background: rgb(69,58,62);
+  background: linear-gradient(90deg, rgba(69,58,62,1) 0%, rgba(50,50,73,1) 57%, rgba(46,62,80,1) 100%);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.navbar>ul{
+  display: flex;
+  gap: 2rem;
+  font-size: larger;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar>ul>li{
+  padding: 1.5rem 2rem;
+  transition: all .25s ease;
+}
+
+.navbar>ul>li:hover{
+  background-color: #ffffff;
+  color: darkslategray;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.logo:hover{
+cursor: pointer;
+}

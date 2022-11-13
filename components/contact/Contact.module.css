@@ -1,0 +1,44 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  border: 1px solid teal;
+  border-radius: 8px;
+  margin-top: 3rem;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+.control{
+  display: flex;
+  flex-direction: column;
+}
+
+.control label{
+  color: teal;
+  text-align: left;
+  margin: .25rem 0;
+}
+
+.control input, .control textarea{
+  border: 1px solid teal;
+  border-radius: 8px;
+  padding: .5rem;
+}
+
+.actions{
+  padding: 1rem;
+  border: 1px solid teal;
+  border-radius: 8px;
+  color: teal;
+  background: linear-gradient(to right, lightgray, transparent, lightgray);
+  background-size: 200% 100%;
+  background-position: 50%;
+  transition: all .3s ease;
+}
+.actions:hover{
+  background-position: right;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
