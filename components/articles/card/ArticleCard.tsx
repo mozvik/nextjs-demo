@@ -15,13 +15,13 @@ const ArticleCard = (props: any) => {
         <address>
           {props.author} | {props.date_created}
         </address>
+        <div>ID: {props.id}</div>
       </div>
-      <div className={classes.image}>
+      <div className={classes.image} onClick={showDetailsHandler}>
         <img
           src={process.env.NEXT_PUBLIC_DIRECTUS_ASSETS_URL + props.image}
           alt={props.title}
         />
-        <div>ID: {props.id}</div>
       </div>
 
       <div className={classes.actions} onClick={showDetailsHandler}>

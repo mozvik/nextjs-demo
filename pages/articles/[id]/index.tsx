@@ -19,7 +19,7 @@ const ArticleDetails: NextPage<Article> = (props) => {
       <ArticleDetail
         id={props.id}
         title={props.title}
-        published={props.date_created}
+        date_created={props.date_created}
         author={props.author}
         image={props.image}
         content={props.content}

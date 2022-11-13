@@ -18,7 +18,7 @@ function ArticleDetail(props: any) {
       <div className={classes.wrapper}>
         <div className={classes.content}>
           <h3>
-            {props.title} | {props.id}
+            {props.title}
           </h3>
           <div className={classes.address}>
             <div>{props.author}</div> <div>{props.date_created}</div>

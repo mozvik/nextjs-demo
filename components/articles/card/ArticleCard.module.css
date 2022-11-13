@@ -23,6 +23,10 @@
   filter: grayscale(100%) blur(1px);
   transition: all 0.3s ease;
 }
+.image img:hover {
+  cursor: pointer;
+}
+
 .card:hover .image img {
   filter: grayscale(0%) blur(0px);
   transition: all 0.3s ease;
