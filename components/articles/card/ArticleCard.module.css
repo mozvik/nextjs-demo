@@ -1,5 +1,7 @@
-.card{
-  display: block;
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 1px solid teal;
   border-radius: 8px;
   padding: 1rem;
@@ -7,36 +9,35 @@
   max-width: 350px;
 }
 
-
-.content{
+.content {
   margin: 1rem 0;
 }
-.content>h3{
+.content > h3 {
   font-weight: 500;
-  font-size:x-large;
+  font-size: x-large;
   margin-bottom: 1rem;
 }
 
-.image img{
+.image img {
   border-radius: 8px;
   filter: grayscale(100%) blur(1px);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.card:hover .image img{
+.card:hover .image img {
   filter: grayscale(0%) blur(0px);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.actions{
+.actions {
   border-radius: 8px;
   margin-top: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
   background: linear-gradient(to right, lightgray, transparent, lightgray);
   background-size: 200% 100%;
   background-position: 50%;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.actions:hover{
+.actions:hover {
   background-position: right;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }

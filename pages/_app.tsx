@@ -11,10 +11,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>{ }</title>
             <link rel="icon" href="/favicon.ico" />
           </Head> */}
-    
-    <Layout>
-      <Component {...pageProps} />
-    </Layout></Fragment>
+
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Fragment>
   );
 }
 

@@ -2,8 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Fragment } from "react";
 import ArticleList from "../../components/articles/list/ArticleList";
-import { Article, ResponseArticlesDataType } from "../../interface/Article";
-import { dummy_articles } from "../../interface/DummyData";
+import { ResponseArticlesDataType } from "../../interface/Article";
+import directus from "../../lib/directus";
 
 const Articles: NextPage<ResponseArticlesDataType> = (props) => {
   return (
@@ -34,17 +34,33 @@ const Articles: NextPage<ResponseArticlesDataType> = (props) => {
 //   }
 // }
 
-export async function getServerSideProps(context: any) {
-  const req = context.req;
-  const res = context.res;
-  const dummy_data: Article[] = dummy_articles;
+export const getServerSideProps = async () => {
+  const articles = directus.items("articles");
+  const res = await articles.readByQuery({
+    // By default API limits results to 100.
+    // With -1, it will return all results, but it may lead to performance degradation
+    // for large result sets.
+    limit: -1,
+  });
 
-  //fetch('/api/articles') //--> saját api --> api folderből az articles.ts
   return {
     props: {
-      articles: dummy_data,
+      articles: res.data,
     },
   };
-}
+};
+
+// export async function getServerSideProps(context: any) {
+//   const req = context.req;
+//   const res = context.res;
+//   const dummy_data: Article[] = dummy_articles;
+
+//   //fetch('/api/articles') //--> saját api --> api folderből az articles.ts
+//   return {
+//     props: {
+//       articles: dummy_data,
+//     },
+//   };
+// }
 
 export default Articles;

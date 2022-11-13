@@ -1,5 +1,5 @@
-import ArticleCard from '../card/ArticleCard';
-import classes from './ArticleList.module.css';
+import ArticleCard from "../card/ArticleCard";
+import classes from "./ArticleList.module.css";
 
 function ArticleList(props: any) {
   return (
@@ -10,7 +10,7 @@ function ArticleList(props: any) {
           id={article.id}
           image={article.image}
           title={article.title}
-          published={article.published}
+          date_created={article.date_created}
           author={article.author}
         />
       ))}

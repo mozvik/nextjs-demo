@@ -3,10 +3,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "check": "npx prettier --check .",
+    "fix": "npx prettier --write ."
   },
   "dependencies": {
+    "@directus/sdk": "^10.1.5",
     "next": "latest",
+    "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

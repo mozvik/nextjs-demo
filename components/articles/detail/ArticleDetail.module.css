@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,24 +7,24 @@
   max-width: 640px;
   margin: 0 auto;
 }
-.content{
+.content {
   width: 100%;
 }
 
-.content h3{
+.content h3 {
   font-size: xx-large;
   font-weight: 600;
   text-transform: uppercase;
   margin: 3rem 0;
 }
 
-.address{
+.address {
   width: 100%;
   font-style: italic;
   display: flex;
   justify-content: space-between;
 }
 
-.text p{
-  margin-bottom: 1rem;
+.text {
+  margin-bottom: 3rem;
 }
