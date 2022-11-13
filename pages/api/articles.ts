@@ -13,7 +13,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const response = await fetch('localhost:8055/items/article')
 
   res.status(200).json({ name: 'John Doe' })
 }
