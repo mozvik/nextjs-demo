@@ -1,0 +1,21 @@
+.content{
+  padding: .1rem .25rem;
+  transition: all 2.2s ease;
+  width: 100%;
+  overflow: hidden;
+}
+
+.leave{ 
+  /* position: absolute; */
+  position: relative;
+  transition: all 2.2s ease;
+  top: 10px;
+  left:0;
+}
+
+.show{
+  position: relative;
+  transition: all 2.2s ease;
+  top: 10px;
+  left:0;
+}
