@@ -22,6 +22,7 @@ import {
   ZoomOut,
 } from "react-scroll-motion";
 import { useTranslation } from "react-i18next";
+import LanguageSelector from "../components/language-selector/LanguageSelector";
 
 const Home: NextPage = () => {
   const Animator = dynamic(
@@ -38,6 +39,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Főoldal" />
       </Head>
+      <LanguageSelector></LanguageSelector>
       <section
         className={
           classes.hero +
@@ -46,8 +48,8 @@ const Home: NextPage = () => {
       >
         <div className="wrapper flex flex-col justify-center">
           <div className="mb-32">
-            <h1 className="text-6xl font-bold mb-10 flex">{t('Welcome to React')}
-              Welcome home&nbsp;
+            <h1 className="text-6xl font-bold mb-10 flex">
+              {t('HERO-TITLE')}&nbsp;
               <ScrollingText
                 color="gainsboro"
                 backgroundColor="orange"
@@ -57,8 +59,7 @@ const Home: NextPage = () => {
               </ScrollingText>
             </h1>
             <p className="w-1/2">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              ratione adipisci ex, numquam impedit eaque veniam accusantium sed.
+              {t('HERO-SUBTITLE')}
             </p>
           </div>
         </div>
