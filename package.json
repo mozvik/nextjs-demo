@@ -9,14 +9,15 @@
   },
   "dependencies": {
     "@directus/sdk": "^10.1.5",
+    "gsap": "^3.11.3",
     "i18next": "^22.0.5",
     "next": "latest",
     "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-gsap": "^3.2.1",
     "react-i18next": "^12.0.0",
-    "react-intersection-observer": "^9.4.0",
-    "react-scroll-motion": "^0.3.0"
+    "react-intersection-observer": "^9.4.0"
   },
   "devDependencies": {
     "@types/node": "18.11.3",

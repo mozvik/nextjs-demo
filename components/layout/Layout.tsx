@@ -6,7 +6,7 @@ function Layout(props: any) {
   return (
     <div className={classes.page}>
       <Nav />
-      <main className={classes.main}>{props.children}</main>
+      <main className={classes.main + ' bg-zinc-100'}>{props.children}</main>
       <Footer />
     </div>
   );
