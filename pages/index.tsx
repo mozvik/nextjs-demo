@@ -73,6 +73,14 @@ const Home: NextPage = () => {
           {/*  See you 💛*/}
           {/*</Animator>*/}
         </span>
+        <h2></h2>
+        <h2></h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </section>
       {/*  </ScrollPage>*/}
       {/*</ScrollContainer>*/}
