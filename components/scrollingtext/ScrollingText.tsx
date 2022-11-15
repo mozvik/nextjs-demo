@@ -36,10 +36,6 @@ const ScrollingText = (props: ScrollingTextProps) => {
         setPrevIndex(1)
         setIndex(2)
       }
-
-      
-
-
     }
     
   }
@@ -47,7 +43,7 @@ const ScrollingText = (props: ScrollingTextProps) => {
   return (
     <InView as="div" onChange={onChangeCallback}>
       <div ref={ref} className={classes.content} style={{ color: props.color, backgroundColor: props.backgroundColor}}>
-        <span className={classes.leave}>{props.content[index]}</span>
+        <span>{props.content[index]}</span>
       
       </div>
     </InView>
