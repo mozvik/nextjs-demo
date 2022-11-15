@@ -21,12 +21,15 @@ import {
   ZoomIn,
   ZoomOut,
 } from "react-scroll-motion";
+import { useTranslation } from "react-i18next";
 
 const Home: NextPage = () => {
   const Animator = dynamic(
     import("react-scroll-motion").then((it) => it.Animator),
     { ssr: false }
   );
+  const { t } = useTranslation();
+
 
   return (
     <Fragment>
@@ -43,7 +46,7 @@ const Home: NextPage = () => {
       >
         <div className="wrapper flex flex-col justify-center">
           <div className="mb-32">
-            <h1 className="text-6xl font-bold mb-10 flex">
+            <h1 className="text-6xl font-bold mb-10 flex">{t('Welcome to React')}
               Welcome home&nbsp;
               <ScrollingText
                 color="gainsboro"
@@ -64,10 +67,10 @@ const Home: NextPage = () => {
       {/*  <ScrollPage>*/}
       <section className="flex min-h-screen flex-col items-center bg-zinc-100 text-slate-800">
         <span style={{ fontSize: 40 }}>
-          <Animator animation={MoveOut(1000, 0)}>Good bye ✋🏻</Animator>
-          <Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0))}>
-            See you 💛
-          </Animator>
+          {/*<Animator animation={MoveOut(1000, 0)}>Good bye ✋🏻</Animator>*/}
+          {/*<Animator animation={batch(Fade(), Sticky(), MoveIn(1000, 0))}>*/}
+          {/*  See you 💛*/}
+          {/*</Animator>*/}
         </span>
       </section>
       {/*  </ScrollPage>*/}
