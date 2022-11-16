@@ -1,12 +1,14 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import { en_translation } from "../i18n/en.js";
-import { hu_translation } from "../i18n/hu";
+import * as en_translation from '../i18n/en.json'
+import * as hu_translation from '../i18n/hu.json'
+// import { en_translation } from "../i18n/en.js";
+// import { hu_translation } from "../i18n/hu";
 
 const resources = {
   en: en_translation,
   hu: hu_translation,
-};
+} as const;
 
 i18n
   .use(initReactI18next)
