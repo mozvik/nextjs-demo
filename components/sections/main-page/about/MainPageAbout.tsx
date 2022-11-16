@@ -57,22 +57,26 @@ function MainPageAbout(props: any) {
 
   useEffect(() => {
     // uses el.current.querySelectorAll() internally
-    gsap.fromTo(ulElement("li"),{
-      x: "30vw",
-      opacity: 0,
-    }, {
-      x: 0,
-      opacity: 1,
-      stagger: 0.1,
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: '-=50%',
-        end: '+=30%',
-        scrub: 1,
-        markers: true
+    gsap.fromTo(
+      ulElement("li"),
+      {
+        x: "30vw",
+        opacity: 0,
       },
-      backgroundColor: 'red'
-    });
+      {
+        x: 0,
+        opacity: 1,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "-=50%",
+          end: "+=30%",
+          scrub: 1,
+          markers: true,
+        },
+        backgroundColor: "red",
+      }
+    );
   }, []);
 
   return (
@@ -88,23 +92,23 @@ function MainPageAbout(props: any) {
         <h2 ref={titleBottomRef} className="text-3xl">
           {t("from others are...")}
         </h2>
-        
+
         <ul id="thirdCircle" ref={ulRef} className="w-2/3 mt-32">
           <li className="p-3 m-3 border" style={{ backgroundColor: "blue" }}>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam,
             sint!
           </li>
           <li className="p-3 m-3 border">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quae
-            id necessitatibus quasi?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            quae id necessitatibus quasi?
           </li>
           <li className="p-3 m-3 border">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
             corporis quos architecto.
           </li>
           <li className="p-3 m-3 border">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum velit,
-            cupiditate sapiente vel voluptatem fuga quia dolorum?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+            velit, cupiditate sapiente vel voluptatem fuga quia dolorum?
           </li>
         </ul>
       </div>
